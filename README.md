@@ -14,12 +14,12 @@ install.packages("tm")
 library("twitteR")
 library("wordcloud")
 library("tm”)
-# start pulling tweets from Iranian Tansim News TW account
+# start pulling tweets from news agency
 Tasnimnews_EN_tweets <- searchTwitter("Tasnimnews_EN", n=1000, lang = "en”)
 # Test
 Tasnimnews_EN_tweets
 Tasnimnews_EN_tweets[1:10]
-# To search TW for one or two more keywords regardless of the user
+# To search TW for one or two more keywords
 ib <- searchTwitter('iran+brazil', lang="en", n=1000, resultType = "recent”)
 # test
 ib
